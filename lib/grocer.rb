@@ -1,9 +1,16 @@
-def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
 
+
+def find_item_by_name_in_collection(name, collection)
+
+collection.each do |hash|
+  hash.each do |item, value|
+    if item[value] == item[name]
+      return item[name]
 end
+end
+end
+end
+    
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
@@ -12,6 +19,3 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 end
-
-
-  
