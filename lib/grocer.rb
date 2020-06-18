@@ -27,7 +27,9 @@ while counter < cart.length
     :clearance => cart[counter][:clearance]
     :count => 1 
   }
+  cart_update << new_item
   end
   counter += 1 
   end
+  cart_update
 end
